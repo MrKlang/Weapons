@@ -12,6 +12,8 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+		public bool useWeapon;
+		public bool changeWeapon;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -43,8 +45,17 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
-#endif
 
+		public void OnChangeWeapon(InputValue value)
+        {
+			ChangeWeaponInput(value.isPressed);
+        }
+
+		public void OnUseWeapon(InputValue value)
+		{
+			UseWeaponInput(value.isPressed);
+		}
+#endif
 
 		public void MoveInput(Vector2 newMoveDirection)
 		{
@@ -64,6 +75,16 @@ namespace StarterAssets
 		public void SprintInput(bool newSprintState)
 		{
 			sprint = newSprintState;
+		}
+
+		public void ChangeWeaponInput(bool newSprintState)
+		{
+			changeWeapon = newSprintState;
+		}
+
+		public void UseWeaponInput(bool newSprintState)
+		{
+			useWeapon = newSprintState;
 		}
 
 		private void OnApplicationFocus(bool hasFocus)
