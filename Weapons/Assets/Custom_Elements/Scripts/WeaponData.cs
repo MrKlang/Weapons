@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 [Serializable]
 public class WeaponData
@@ -7,6 +8,8 @@ public class WeaponData
     private Guid weaponGuid;
     public float damage;
     public string name;
+    public AssetReferenceSprite weaponIcon;
+    public AssetReferenceGameObject weaponPrefab;
 
     public Guid weaponId => weaponGuid;
     public WeaponData()

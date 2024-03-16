@@ -13,14 +13,34 @@ MonoBehaviour:
   m_Name: WeaponDataLibrary
   m_EditorClassIdentifier: 
   _rangedWeaponsDataList:
-  - weaponId: 
-    damage: 2
+  - damage: 2
     name: Pistol
+    weaponIcon:
+      m_AssetGUID: 7780504434bbac24b9f52296a754a8b0
+      m_SubObjectName: pistol
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 0
+    weaponPrefab:
+      m_AssetGUID: bdb95951a08468d459fc09903afc95db
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
     maxAmmoCapacity: 15
     weaponType: 0
   _meleeWeaponsDataList:
-  - weaponId: 
-    damage: 5
+  - damage: 5
     name: Knife
+    weaponIcon:
+      m_AssetGUID: 9f78e5c67aedc54459bcd6d76410ffac
+      m_SubObjectName: knife
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 0
+    weaponPrefab:
+      m_AssetGUID: 71ed498a075e9c14c909e9f466e367a8
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
     durability: 25
     weaponType: 0

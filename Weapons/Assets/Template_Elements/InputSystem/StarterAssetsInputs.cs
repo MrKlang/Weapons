@@ -77,14 +77,14 @@ namespace StarterAssets
 			sprint = newSprintState;
 		}
 
-		public void ChangeWeaponInput(bool newSprintState)
+		public void ChangeWeaponInput(bool newChangeWeaponState)
 		{
-			changeWeapon = newSprintState;
+			changeWeapon = newChangeWeaponState;
 		}
 
-		public void UseWeaponInput(bool newSprintState)
+		public void UseWeaponInput(bool newUseWeaponState)
 		{
-			useWeapon = newSprintState;
+			useWeapon = newUseWeaponState;
 		}
 
 		private void OnApplicationFocus(bool hasFocus)

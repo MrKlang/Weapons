@@ -9,17 +9,38 @@ public class WeaponsDataLibrary : ScriptableObject
     [SerializeField] private List<RangedWeaponData> _rangedWeaponsDataList;
     [SerializeField] private List<MeleeWeaponData> _meleeWeaponsDataList;
 
-    public bool IsWeaponRanged(Guid id)
+    public bool IsWeaponRanged(Guid id, string name = null)
     {
-        return _rangedWeaponsDataList.Any(e => e.weaponId.Equals(id));
+        if (id.Equals(Guid.Empty))
+        {
+            return _rangedWeaponsDataList.Any(e => e.name.Equals(name));
+        }
+        else
+        {
+            return _rangedWeaponsDataList.Any(e => e.weaponId.Equals(id));
+        }
     }
 
-    public WeaponData GetMeleeWeaponData(Guid id)
+    public WeaponData GetMeleeWeaponData(Guid id, string name = null)
     {
-        return _meleeWeaponsDataList.First(e => e.weaponId.Equals(id));
+        if (id.Equals(Guid.Empty))
+        {
+            return _meleeWeaponsDataList.First(e => e.name.Equals(name));
+        }
+        else
+        {
+            return _meleeWeaponsDataList.First(e => e.weaponId.Equals(id));
+        }
     }
-    public WeaponData GetRangedWeaponData(Guid id)
+    public WeaponData GetRangedWeaponData(Guid id, string name = null)
     {
-        return _rangedWeaponsDataList.First(e => e.weaponId.Equals(id));
+        if (id.Equals(Guid.Empty))
+        {
+            return _rangedWeaponsDataList.First(e => e.name.Equals(name));
+        }
+        else
+        {
+            return _rangedWeaponsDataList.First(e => e.weaponId.Equals(id));
+        }
     }
 }

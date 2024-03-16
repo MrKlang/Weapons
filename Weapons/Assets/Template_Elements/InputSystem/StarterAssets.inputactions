@@ -47,7 +47,7 @@
                     "id": "825633d7-1ed9-4b81-9b55-766b67c54998",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 },
                 {
@@ -56,7 +56,7 @@
                     "id": "5705a989-2408-4918-a40a-5a7eee484472",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 }
             ],
@@ -239,23 +239,23 @@
                 },
                 {
                     "name": "",
-                    "id": "0e768acf-7d25-4681-b985-7ffe3d8f967c",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "Press",
+                    "id": "2596ab4f-4a04-41c2-9a27-f5caa1ef3726",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "ChangeWeapon",
+                    "action": "UseWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "2596ab4f-4a04-41c2-9a27-f5caa1ef3726",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "Press",
+                    "id": "0e768acf-7d25-4681-b985-7ffe3d8f967c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "UseWeapon",
+                    "action": "ChangeWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
